@@ -4,7 +4,7 @@ on: push
 
 jobs:
   ubuntu:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - run: date
   windows:
@@ -16,7 +16,7 @@ jobs:
     steps:
     - run: date
   depends:
-    needs: [ububtu,windows,macos]
+    needs: [ubuntu,windows,macos]
     runs-on: macos-latest
     steps:
     - run: date
